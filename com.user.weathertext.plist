@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.weathertext</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <!-- Replace with the full path to your python3 if using pyenv/conda: `which python3` -->
+        <string>/Users/YOUR_USERNAME/Scripts/weather_imessage.py</string>
+        <!-- Replace YOUR_USERNAME with your macOS username -->
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/weathertext.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/weathertext.err</string>
+</dict>
+</plist>
