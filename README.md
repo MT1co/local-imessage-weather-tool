@@ -1,6 +1,6 @@
 # iMessage Weather Tool
 
-Sends a daily weather forecast to yourself via iMessage from a Mac running in the background. Useful for remote trips where you want to use Apple satellite service to receive a weather briefing texted to your phone each morning. This saves you from having to use a Garmin or other satellite data service to receive the weather. Running locally from your mac also allows you to skip using a SMS weather subscription service.
+Sends a daily 3 day weather forecast to yourself via iMessage from a Mac running in the background. Useful for remote trips where you want to use Apple Satellite service to receive a weather briefing texted to your phone each morning. This saves you from having to use a Garmin or other satellite data service to receive the weather. 
 
 **Example message:**
 ```
@@ -95,6 +95,6 @@ sudo pmset repeat wakeorpoweron MTWRFSU 06:55:00       # wake 5 min before the 7
 
 ---
 
-## Limitations
+## Apple Satellite
 
-This relies on your phone having a signal when the message is sent. If you're in an area with no cell coverage, the message will arrive when you next get signal. For mid-trail delivery, a satellite communicator with a built-in weather feature is more reliable.
+This requires the user to connect to Apple Satellite to receive the message. You can connect anytime and receive a backlog of messages. Ensure to test prior to any trips by activating airplane mode during the scheduled message time, then connecting to Apple Satellite service to ensure you can receive.
