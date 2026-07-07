@@ -1,6 +1,6 @@
 # iMessage Weather Tool
 
-Sends a daily weather forecast to yourself via iMessage from a Mac running in the background. Useful for remote trips where you want a weather briefing texted to your phone each morning.
+Sends a daily weather forecast to yourself via iMessage from a Mac running in the background. Useful for remote trips where you want to use Apple satellite service to receive a weather briefing texted to your phone each morning. This saves you from having to use a Garmin or other satellite data service to receive the weather. Running locally from your mac also allows you to skip using a SMS weather subscription service.
 
 **Example message:**
 ```
