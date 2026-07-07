@@ -19,6 +19,7 @@ Weather data is sourced from [Open-Meteo](https://open-meteo.com/) (free, no API
 ## Requirements
 
 - macOS with Messages.app signed into your Apple ID
+- Mac must always be on and connected to internet
 - Python 3
 - `requests` library
 
