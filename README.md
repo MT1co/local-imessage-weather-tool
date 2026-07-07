@@ -1,4 +1,4 @@
-# iMessage Weather Tool
+# iMessage Weather Tool for use with Apple Satellite in the backcountry with no cell signal
 
 Sends a daily 3 day weather forecast to yourself via iMessage from a Mac running in the background. Useful for remote trips where you want to use Apple Satellite service to receive a weather briefing texted to your phone each morning. This saves you from having to use a Garmin or other satellite data service to receive the weather. 
 
