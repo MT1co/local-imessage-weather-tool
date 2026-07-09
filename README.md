@@ -73,14 +73,18 @@ Then load it:
 
 ```bash
 cp com.user.weathertext.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.user.weathertext.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.user.weathertext.plist
+launchctl enable gui/$(id -u)/com.user.weathertext
 ```
+
+> On macOS Ventura and later, `launchctl load`/`unload` are deprecated and can behave inconsistently — use `bootstrap`/`bootout` instead.
 
 To change the time, edit the `Hour` and `Minute` values in the plist, then reload:
 
 ```bash
-launchctl unload ~/Library/LaunchAgents/com.user.weathertext.plist
-launchctl load ~/Library/LaunchAgents/com.user.weathertext.plist
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.user.weathertext.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.user.weathertext.plist
+launchctl enable gui/$(id -u)/com.user.weathertext
 ```
 
 Check logs at `/tmp/weathertext.out` and `/tmp/weathertext.err`.
